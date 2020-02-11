@@ -1,4 +1,4 @@
-package com.nagarro.nagp.serviceone.exception;
+package com.nagarro.nagp.inventory.exception;
 
 /**
  * The Class InvalidParametreException.
