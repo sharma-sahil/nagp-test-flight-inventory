@@ -35,7 +35,7 @@ public class InputValidator {
 			throw new InvalidParameterException("Destination must not be null in request",
 					"invalid.request.destination");
 		}
-		if (null != request.getTravelDate()) {
+		if (null == request.getTravelDate()) {
 			throw new InvalidParameterException("Travel Date not be null in request", "invalid.request.travelDate");
 		}
 	}
@@ -58,7 +58,7 @@ public class InputValidator {
 		if (null == request.getAction()) {
 			throw new InvalidParameterException("Action must not be null in request", "invalid.request.action");
 		}
-		if (null != request.getFlightDate()) {
+		if (null == request.getFlightDate()) {
 			throw new InvalidParameterException("Flight Date not be null in request", "invalid.request.flightDate");
 		}
 		if (request.getSeats() < 1) {
